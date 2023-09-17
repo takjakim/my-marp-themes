@@ -1,10 +1,10 @@
 /* @theme hyu */
 
 @import "default";
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Barun+Gothic:wght@400&display=swap);
 
 :root {
-  font-family: "Noto Sans KR", "CMU Sans Serif", "Segoe UI", Helvetica, sans-serif;
+  font-family: "Nanum Barun Gothic", "CMU Sans Serif", "Segoe UI", Helvetica, sans-serif;
   --beamer-main: #0e4a84;
   --beamer-secondary: #141414;
 }
