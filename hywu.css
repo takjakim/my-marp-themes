@@ -158,11 +158,39 @@ section.divider h1::before {
   height: 4px;
   background-color: var(--primary-color);
 }
-
+/* h2 스타일 수정 */
+h2 {
+  position: relative;
+  padding: 0.4em 0.7em;
+  margin: 0.1em 0;
+  color: white;
+  z-index: 1;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  border-radius: 80px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              0 4px 8px rgba(0,0,0,0.1),
+              0 8px 16px rgba(0,0,0,0.1);
+  width: fit-content;
+  height: fit-content;
+}
 /* two-column h2 스타일 */
 section.two-column h2 {
-  padding: 0 40px;  /* 좌우 패딩만 추가 */
-  margin-top: 1em;  /* 위쪽 여백 */
+  position: relative;
+  padding: 0.4em 0.7em;
+  margin: 0.1em 0;
+  z-index: 1;
+  background-color: var(--primary-color);
+  opacity: 1;
+  border-radius: 80px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+              0 4px 8px rgba(0,0,0,0.1),
+              0 8px 16px rgba(0,0,0,0.1);
+  color: white;
+  font-size: 1.2em;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
 }
 
 /* two-column 리스트 스타일 */
