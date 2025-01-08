@@ -22,13 +22,6 @@ section {
   padding: 40px;
 }
 
-/* 페이지 번호 숨기기 - 커버, 목차, 간지 페이지 */
-section.cover,
-section.toc,
-section.divider {
-  --paginate: false;
-}
-
 /* 일반 페이지와 two-column 페이지의 h1 스타일 */
 section:not(.cover):not(.toc):not(.divider) h1 {
   position: absolute;
