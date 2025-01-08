@@ -296,6 +296,19 @@ h5 {
   padding-top: 0.5em;
   width: calc(100% - 80px);  /* 좌우 패딩 고려 */
 }
+
+h4 {
+  position: absolute;
+  bottom: 60px;
+  font-size: 1em;
+  color: var(--text-dark);
+  font-weight: normal;
+  margin: 0;
+  padding-top: 0.5em;
+  width: calc(100% - 80px);  /* 좌우 패딩 고려 */
+  text-align: center;
+  }
+  
 /* 전체적인 간격 조정 */
 section {
 gap: 0.1em; /* 섹션 내 요소들 사이의 간격 줄임 */
@@ -350,3 +363,4 @@ section.toc h1 + ul,
 section.toc h1 + ol {
 margin-top: 0.1em;
 }
+
