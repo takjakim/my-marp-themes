@@ -162,7 +162,7 @@ section.divider h1::before {
 h2 {
   position: relative;
   padding: 0.4em 0.7em;
-  margin: 0.1em 0;
+  margin: -0.2em 0; /* 음수 마진으로 gap 줄임 */
   color: white;
   z-index: 1;
   background-color: var(--primary-color);
@@ -178,7 +178,7 @@ h2 {
 section.two-column h2 {
   position: relative;
   padding: 0.4em 0.7em;
-  margin: 0.1em 0;
+  margin: -0.2em 0 -0.2em auto; /* 음수 마진으로 gap 줄임 */
   z-index: 1;
   background-color: var(--primary-color);
   opacity: 1;
@@ -295,4 +295,58 @@ h5 {
   border-top: 1px solid var(--border-color);
   padding-top: 0.5em;
   width: calc(100% - 80px);  /* 좌우 패딩 고려 */
+}
+/* 전체적인 간격 조정 */
+section {
+gap: 0.1em; /* 섹션 내 요소들 사이의 간격 줄임 */
+display: flex;
+flex-direction: column;
+}
+
+/* 리스트 아이템 간격 조정 */
+section ul, 
+section ol {
+margin: 0.1em 0;
+gap: 0.1em;
+display: flex;
+flex-direction: column;
+}
+
+/* 문단 간격 조정 */
+section p {
+margin: 0.2em 0;
+}
+
+/* two-column 레이아웃에서의 간격 조정 */
+section.two-column {
+gap: 0.8em; /* 컬럼 사이 간격 */
+}
+
+/* 박스형 요소들의 패딩 조정 */
+section .box,
+section blockquote {
+padding: 0.5em;
+margin: 0.3em 0;
+}
+  /* TOC(목차) 페이지 특별 스타일링 */
+section.toc {
+gap: 0.01em; /* TOC 항목들 사이 간격을 더 좁게 */
+}
+
+section.toc ul,
+section.toc ol {
+margin: 0.05em 0;
+gap: 0.05em;
+}
+
+/* TOC 내부 리스트 아이템 스타일 */
+section.toc li {
+margin: 0;
+line-height: 2; /* 줄 간격을 더 좁게 */
+}
+
+/* TOC 제목과 내용 사이 간격 */
+section.toc h1 + ul,
+section.toc h1 + ol {
+margin-top: 0.1em;
 }
